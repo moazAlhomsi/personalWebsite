@@ -1,0 +1,76 @@
+{%extends 'blog/base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block title %}Moaz's Portfolio{% endblock %}
+
+{% block content %}
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+    <h1> ML & Web Applications</h1>
+</head>
+
+<body>
+    <div class="custom-container">
+        <div class="card" style="max-width: 18rem;">
+            <a href="https://analysis-test.herokuapp.com">
+                <img src="{% static 'BreastCancer.jpg'%}" class="card-img-top expand-on-hover" alt="...">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Breast Cancer</h5>
+                <p class="card-text">This dataset, provided by the Oncology Institute, consists of two classes with 201
+                    instances belonging to one class and 85 instances belonging to another class. The instances are ...
+                </p>
+
+            </div>
+        </div>
+        <div class="card" style="max-width: 18rem;">
+            <a href="https://bank-campaign-app.herokuapp.com/">
+                <img src="{%static 'BankCampaign.jpg'%}" class="card-img-top expand-on-hover" alt="..."></a>
+
+            <div class="card-body">
+                <h5 class="card-title">Bank Campaign</h5>
+                <p class="card-text"> The marketing campaigns were based on phone calls. Often, more than one contact to
+                    the same client was required, in order to access if the product (bank term deposit) would be (or
+                    not) subscribed.</p>
+
+            </div>
+        </div>
+        <div class="card" style="max-width: 18rem;">
+            <a href="https://basic-forest-app.herokuapp.com/">
+                <img src="{%static 'CarEvaluation.jpg'%}" class="card-img-top expand-on-hover" alt="...">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Car Evaluation</h5>
+                <p class="card-text"> The model utilizes this concept structure to evaluate cars based on their
+                    acceptability, price, technical characteristics, comfort, and safety. It takes into account specific
+                    factors such as buying price ...</p>
+
+            </div>
+        </div>
+        <div class="card" style="max-width: 18rem;">
+            <a href="https://geometric-app.herokuapp.com/">
+                <img src="{% static 'GeometryApp.jpg'%}" class="card-img-top expand-on-hover" alt="...">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Geometry App</h5>
+                <p class="card-text">
+                    The geometry app offers convenient calculations for triangles, squares, and right
+                    triangles using trigonometry. With a user-friendly interface, it allows users to input measurements
+                    ...
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+{% endblock %}

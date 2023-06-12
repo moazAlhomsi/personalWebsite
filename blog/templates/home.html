@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<title>Moaz Alhomsi</title>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class=" container-fluid">
+            <a class="navbar-brand" href="{% url 'blog:home' %}">Moaz Alhomsi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:post_list' %}">Blog</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'blog:webdevelopment' %}">Web Development</a></li>
+                            <li><a class="dropdown-item" href="{% url 'blog:datascience' %}">Data Science</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="content-home">
+        <h1> Welcome to my web page.</h1>
+        <p>
+            I am Moaz, a passionate data scientist with a degree in international economics. Throughout my
+            university studies, I developed a keen interest for statistics and econometrics, which ignited my
+            curiosity to explore the realm of artificial intelligence for analysis. My ultimate goal is to drive
+            efficiency and promote success in businesses and the environment through the power of data.
+        </p>
+        <p>
+            With a diverse background, strong technical skills, and a constant thirst for knowledge, I have a
+            well-rounded skill set that allows me to thrive in different fields. From conducting thorough data analysis
+            and research to efficiently managing stock control and offering valuable business advice, I have gained
+            valuable insights into various industries.
+        </p>
+        <p>
+            As the Head of Data Analytics at Alrifai Consulting Group, I lead a team responsible for performing
+            descriptive, exploratory, and predictive analyses across various projects. Leveraging cutting-edge tools and
+            techniques, I derive actionable insights and deliver informed recommendations to drive organizational
+            growth.
+        </p>
+        <p>
+            My previous roles have provided me with practical experience in various operational tasks, including
+            inventory management, product packaging, labeling, and assembly. Moreover, I have sharpened my skills in
+            utilizing robust data analysis tools such as Tableau and SAP to uncover valuable insights and enhance
+            operational effectiveness.
+        </p>
+        <p>
+            Driven by an unending curiosity and a commitment to continuous growth, I eagerly embrace new challenges and
+            actively seek opportunities to expand my knowledge and expertise in the dynamic realm of data analytics. I
+            firmly believe that my diverse background, technical skills, and profound understanding of statistical
+            analysis and econometric principles make me a valuable asset to any team.
+        </p>
+        <p>
+            If you are seeking a dedicated and results-oriented data analyst who can drive data-informed decision-making
+            and contribute to your organization's success, I invite you to explore my personal web applications. Let's
+            connect and discuss how my skills and experiences can add value to your team.
+        </p>
+
+    </div>
+    <div id="sidebar-home">
+        <img src="{% static 'Moaz.jpg' %}" class="img-fluid" alt="Profile Picture" width="400" height="400">
+    </div>
+
+</body>
+
+</html>

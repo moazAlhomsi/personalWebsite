@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+
+{%block title%}MacroEcon Blog{%endblock%}
+
+
+
+{%block content%}
+
+<h1>MacroEcon Blog</h1>
+{% for post in posts %}
+<h4>
+    <a href='{{post.get_absolute_url}}'>
+        {{post.title}}
+    </a>
+</h4>
+<p class="date">
+    Published {{post.publish}} by Moaz Alhomsi
+</p>
+
+{{post.body|truncatewords:30|linebreaks}}
+{%endfor%}
+{% include 'pagination.html' with page=page_obj %}
+<div class="disclaimer">
+    <p>
+        <span style="color: red; font-size: large;">Disclaimer:</span> This blog is intended for illustrative and
+        informational
+        purposes only. It is not meant to provide comprehensive economic analysis or serve as a substitute for
+        professional financial advice. The content presented here is primarily focused on visualizing economic data
+        using Python for educational and web development purposes.
+    </p>
+</div>
+{%endblock%}
