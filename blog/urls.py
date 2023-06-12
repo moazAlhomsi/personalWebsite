@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 app_name = 'blog'
 
 urlpatterns=[
-    path('home.html', views.home, name='home'),
+    path('', views.home, name='home'),
     path('datascience/', views.datascience, name='datascience'),
     path('webdevelopment/', views.webdevelopment, name='webdevelopment'),
     path('blog/', views.PostViewList.as_view(), name='post_list'),
