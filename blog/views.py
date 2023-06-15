@@ -12,8 +12,8 @@ def home(request):
 def datascience(request):
     return render(request,'datascience.html')
 
-def contact(request):
-    return render(request,'contact.html')
+# def contact(request):
+#     return render(request,'contact.html')
     
 def webdevelopment(request):
     return render(request,'webdevelopment.html')
