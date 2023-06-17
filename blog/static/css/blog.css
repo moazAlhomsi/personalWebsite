@@ -64,6 +64,16 @@ h2 {
     height: 70vh;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 20px;
+    color: #f7eded;
+    letter-spacing: 1px;
+
+}
+
 .expand-on-hover {
     transition: transform .2s;
 }
