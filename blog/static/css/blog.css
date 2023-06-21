@@ -26,6 +26,21 @@ h5 {
 
 }
 
+#content-home p {
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+footer .container {
+    padding: 1em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 #sidebar-home {
     float: right;
     width: 25%;
